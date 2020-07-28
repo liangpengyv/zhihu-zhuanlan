@@ -7,9 +7,23 @@ html {
   color: #222;
 }
 
+body {
+  margin: 0;
+  padding: 0;
+}
+
 ::selection {
   background-color: #b3d4fc;
   text-shadow: none;
+}
+
+button {
+  cursor: pointer;
+  outline: none;
+}
+
+a {
+  text-decoration: none;
 }
 
 ul {
@@ -34,24 +48,24 @@ li {
 
 .center-block {
   display: block;
-  margin-right: auto;
   margin-left: auto;
-}
-
-.pull-right {
-  float: right !important;
+  margin-right: auto;
 }
 
 .pull-left {
   float: left !important;
 }
 
-.text-right {
-  text-align: right !important;
+.pull-right {
+  float: right !important;
 }
 
 .text-left {
   text-align: left !important;
+}
+
+.text-right {
+  text-align: right !important;
 }
 
 .text-center {
@@ -88,13 +102,13 @@ li {
    【清除浮动】
    --------------- */
 
-.clear-fix:after,
-.clear-fix:before {
+.clearfix:after,
+.clearfix:before {
   content: " ";
   display: table;
 }
 
-.clear-fix:after {
+.clearfix:after {
   clear: both;
 }
 
