@@ -11,106 +11,22 @@
     <div class="home-middle">
       <h3 class="section-title center-block text-center">专栏 · 发现</h3>
       <div class="container center-block">
-        <a class="item text-center">
-          <img class="avatar" width="48" height="48" src="https://pic4.zhimg.com/v2-463d6baa72be45c295632a968d0e4053_xs.jpg" srcset="https://pic4.zhimg.com/v2-463d6baa72be45c295632a968d0e4053_l.jpg 2x" alt="专栏图像">
+        <a class="item text-center" v-for="(item, index) in columnList" :href="item.url" target="_blank">
+          <img class="avatar" width="48" height="48" :src="item.image_url" alt="专栏图像">
           <div class="info">
-            <div class="title">外汇的逻辑</div>
-            <div class="description">我曾在芬兰央行任职宏观研究助理，长期以来对外汇研究和交易都是充满了热爱。不管从理论还是到实战交易，我都希望能写出来跟大家讨论。</div>
+            <div class="title">{{item.title}}</div>
+            <div class="description">{{item.description}}</div>
           </div>
           <div class="meta">
-            1,785
+            {{item.followers}}
             人关注 |
-            3
-            篇文章
-          </div>
-          <button class="enter-into">进入专栏</button>
-        </a>
-        <a class="item text-center">
-          <img class="avatar" width="48" height="48" src="https://pic4.zhimg.com/v2-463d6baa72be45c295632a968d0e4053_xs.jpg" srcset="https://pic4.zhimg.com/v2-463d6baa72be45c295632a968d0e4053_l.jpg 2x" alt="专栏图像">
-          <div class="info">
-            <div class="title">外汇的逻辑</div>
-            <div class="description">我曾在芬兰央行任职宏观研究助理，长期以来对外汇研究和交易都是充满了热爱。不管从理论还是到实战交易，我都希望能写出来跟大家讨论。</div>
-          </div>
-          <div class="meta">
-            1,785
-            人关注 |
-            3
-            篇文章
-          </div>
-          <button class="enter-into">进入专栏</button>
-        </a>
-        <a class="item text-center">
-          <img class="avatar" width="48" height="48" src="https://pic4.zhimg.com/v2-463d6baa72be45c295632a968d0e4053_xs.jpg" srcset="https://pic4.zhimg.com/v2-463d6baa72be45c295632a968d0e4053_l.jpg 2x" alt="专栏图像">
-          <div class="info">
-            <div class="title">外汇的逻辑</div>
-            <div class="description">我曾在芬兰央行任职宏观研究助理，长期以来对外汇研究和交易都是充满了热爱。不管从理论还是到实战交易，我都希望能写出来跟大家讨论。</div>
-          </div>
-          <div class="meta">
-            1,785
-            人关注 |
-            3
-            篇文章
-          </div>
-          <button class="enter-into">进入专栏</button>
-        </a>
-        <a class="item text-center">
-          <img class="avatar" width="48" height="48" src="https://pic4.zhimg.com/v2-463d6baa72be45c295632a968d0e4053_xs.jpg" srcset="https://pic4.zhimg.com/v2-463d6baa72be45c295632a968d0e4053_l.jpg 2x" alt="专栏图像">
-          <div class="info">
-            <div class="title">外汇的逻辑</div>
-            <div class="description">我曾在芬兰央行任职宏观研究助理，长期以来对外汇研究和交易都是充满了热爱。不管从理论还是到实战交易，我都希望能写出来跟大家讨论。</div>
-          </div>
-          <div class="meta">
-            1,785
-            人关注 |
-            3
-            篇文章
-          </div>
-          <button class="enter-into">进入专栏</button>
-        </a>
-        <a class="item text-center">
-          <img class="avatar" width="48" height="48" src="https://pic4.zhimg.com/v2-463d6baa72be45c295632a968d0e4053_xs.jpg" srcset="https://pic4.zhimg.com/v2-463d6baa72be45c295632a968d0e4053_l.jpg 2x" alt="专栏图像">
-          <div class="info">
-            <div class="title">外汇的逻辑</div>
-            <div class="description">我曾在芬兰央行任职宏观研究助理，长期以来对外汇研究和交易都是充满了热爱。不管从理论还是到实战交易，我都希望能写出来跟大家讨论。</div>
-          </div>
-          <div class="meta">
-            1,785
-            人关注 |
-            3
-            篇文章
-          </div>
-          <button class="enter-into">进入专栏</button>
-        </a>
-        <a class="item text-center">
-          <img class="avatar" width="48" height="48" src="https://pic4.zhimg.com/v2-463d6baa72be45c295632a968d0e4053_xs.jpg" srcset="https://pic4.zhimg.com/v2-463d6baa72be45c295632a968d0e4053_l.jpg 2x" alt="专栏图像">
-          <div class="info">
-            <div class="title">外汇的逻辑</div>
-            <div class="description">我曾在芬兰央行任职宏观研究助理，长期以来对外汇研究和交易都是充满了热爱。不管从理论还是到实战交易，我都希望能写出来跟大家讨论。</div>
-          </div>
-          <div class="meta">
-            1,785
-            人关注 |
-            3
-            篇文章
-          </div>
-          <button class="enter-into">进入专栏</button>
-        </a>
-        <a class="item text-center">
-          <img class="avatar" width="48" height="48" src="https://pic4.zhimg.com/v2-463d6baa72be45c295632a968d0e4053_xs.jpg" srcset="https://pic4.zhimg.com/v2-463d6baa72be45c295632a968d0e4053_l.jpg 2x" alt="专栏图像">
-          <div class="info">
-            <div class="title">外汇的逻辑</div>
-            <div class="description">我曾在芬兰央行任职宏观研究助理，长期以来对外汇研究和交易都是充满了热爱。不管从理论还是到实战交易，我都希望能写出来跟大家讨论。</div>
-          </div>
-          <div class="meta">
-            1,785
-            人关注 |
-            3
+            {{item.articles_count}}
             篇文章
           </div>
           <button class="enter-into">进入专栏</button>
         </a>
       </div>
-      <button class="change-button center-block">
+      <button class="change-button center-block" @click="changeRecommendationsColumns">
         <span style="display:inline-flex;align-items:center">​<svg class="Zi Zi--Refresh Button-zi" fill="currentColor" viewBox="0 0 24 24" width="1.2em" height="1.2em"><path d="M20 12.878C20 17.358 16.411 21 12 21s-8-3.643-8-8.122c0-4.044 3.032-7.51 6.954-8.038.034-1.185.012-1.049.012-1.049-.013-.728.461-1.003 1.057-.615l3.311 2.158c.598.39.596 1.026 0 1.418l-3.31 2.181c-.598.393-1.08.12-1.079-.606 0 0 .006-.606-.003-1.157-2.689.51-4.675 2.9-4.675 5.708 0 3.21 2.572 5.822 5.733 5.822 3.163 0 5.733-2.612 5.733-5.822 0-.633.51-1.148 1.134-1.148.625 0 1.133.515 1.133 1.148" fill-rule="evenodd"></path></svg></span>
         换一换
       </button>
@@ -156,10 +72,45 @@
 
 <script>
   import Header from "../components/Header";
+  import columns from "../mock/recommendations/columns";
 
   export default {
     name: "Home",
-    components: {Header}
+    components: {Header},
+    data() {
+      return {
+        columnList: []
+      }
+    },
+    methods: {
+      getRecommendationsColumns: function () {
+        // this.axios
+        //   .get('https://zhuanlan.zhihu.com/api/recommendations/columns?limit=8&offset=64&seed=7')
+        //   .then(response => {
+        //     this.columnList = response
+        //   })
+        //   .catch(() => {
+        // 请求失败使用 mock 数据展示
+        this.columnList = columns.data
+        // })
+      },
+      changeRecommendationsColumns: function () {
+        // this.axios
+        //   .get('https://zhuanlan.zhihu.com/api/recommendations/columns?limit=8&offset=64&seed=7')
+        //   .then(response => {
+        //     this.columnList = response
+        //   })
+        //   .catch(() => {
+        // 请求失败时，通过打乱原有数据以展示效果
+        this.columnList = columns.data.sort(function () {
+          return .5 - Math.random();
+        })
+        // })
+      }
+    },
+    mounted() {
+      this.getRecommendationsColumns()
+    }
   }
 </script>
 
@@ -275,12 +226,17 @@
               font-size: 1.6rem;
               font-weight: 600;
               color: #1a1a1a;
+              display: -webkit-box;
+              -webkit-box-orient: vertical;
+              -webkit-line-clamp: 1;
+              overflow: hidden;
             }
 
             .description {
               margin-top: .7rem;
               font-size: 1.4rem;
               line-height: 2.1rem;
+              height: 4.2rem;
               color: grey;
               display: -webkit-box;
               -webkit-box-orient: vertical;
