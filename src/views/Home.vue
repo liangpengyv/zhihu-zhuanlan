@@ -4,7 +4,9 @@
     <div class="home-top">
       <h1 class="title">知乎专栏</h1>
       <h2 class="subtitle text-center">随心写作，自由表达</h2>
-      <button class="start-write">开始写文章</button>
+      <router-link to="/write">
+        <button class="start-write">开始写文章</button>
+      </router-link>
       <button class="apply-for">申请开通专栏<span style="display:inline-flex;align-items:center">​<svg fill="currentColor" viewBox="0 0 24 24" width="1.2em" height="1.2em"><path d="M9.218 16.78a.737.737 0 0 0 1.052 0l4.512-4.249a.758.758 0 0 0 0-1.063L10.27 7.22a.737.737 0 0 0-1.052 0 .759.759 0 0 0-.001 1.063L13 12l-3.782 3.716a.758.758 0 0 0 0 1.063z" fill-rule="evenodd"></path></svg></span>
       </button>
     </div>
